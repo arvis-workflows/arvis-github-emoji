@@ -1,6 +1,6 @@
 {
   "name": "arvis-github-emoji",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Github emoji workflow for Arvis",
   "main": "index.js",
   "scripts": {
