@@ -1,0 +1,22 @@
+{
+  "name": "arvis-github-emoji",
+  "version": "0.0.1",
+  "description": "Github emoji workflow for Arvis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup",
+    "prepublishOnly": "arvish-prepublish"
+  },
+  "keywords": [
+    "arvis",
+    "arvish",
+    "arvis-workflow"
+  ],
+  "author": "jopemachine",
+  "license": "MIT",
+  "dependencies": {
+    "arvish": ">=0.6.4"
+  }
+}

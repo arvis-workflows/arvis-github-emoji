@@ -1,0 +1,29 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+    "creator": "jopemachine",
+    "name": "arvis-github-emoji",
+    "enabled": true,
+    "description": "Github emoji workflow for Arvis",
+    "readme": "",
+    "version": "0.0.1",
+    "webAddress": "https://github.com/arvis-workflows/arvis-github-emoji",
+    "defaultIcon": "icon.png",
+    "commands": [
+        {
+            "type": "scriptFilter",
+            "title": "Search Github Emojis..",
+            "command": "ghe",
+            "scriptFilter": "node index.js",
+            "runningSubtext": "Hold on a sec until script work is done...",
+            "argType": "optional",
+            "withspace": true,
+            "actions": [
+                {
+                    "type": "clipboard",
+                    "modifiers": "normal",
+                    "text": "{query}"
+                }
+            ]
+        }
+    ]
+}
